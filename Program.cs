@@ -54,8 +54,9 @@ namespace ConsoleApplication
             ((BaseClass) new UsingOverrideSubclass()).PrintMessage();
 
             Console.WriteLine();
-            Console.WriteLine("Note: Notice how the method using new doesn't know about the new method, because it's not overriden it, so the instance only knows about the base method");
-            Console.WriteLine("Note: The second instance has been overriden so knows about the method heirarchy");
+            Console.WriteLine("Note: We use the BaseClass for all invocations here");
+            Console.WriteLine("Note: The UsingNewSubclass instance does allow the new method to be visible to the base class, it's only available on subclasses, so only the base method is called");
+            Console.WriteLine("Note: The UsingOverrideSubclass instance method overrides the instance on the type, however retains the parent, so both are called");
 
             Console.WriteLine();
         }
