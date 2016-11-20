@@ -38,6 +38,7 @@ Outputs
   --- UsingOverrideSubclass used as a BaseClass type ---
   BaseClass message
   UsingOverrideSubclass message
+  
   Note: We use the BaseClass for all invocations here
   Note: The UsingNewSubclass instance does allow the new method to be visible to the base class, it's only available on subclasses, so only the base method is called
   Note: The UsingOverrideSubclass instance method overrides the instance on the type, however retains the parent, so both are called
