@@ -38,6 +38,9 @@ Outputs
   --- UsingOverrideSubclass used as a BaseClass type ---
   BaseClass message
   UsingOverrideSubclass message
+  
+  Note: Notice how the method using new doesn't know about the new method, because it's not overriden it, so the instance only knows about the base method
+  Note: The second instance has been overriden so knows about the method heirarchy
 ```
 
 References
